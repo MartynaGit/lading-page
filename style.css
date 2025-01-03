@@ -386,7 +386,7 @@ body {
 	
 		font-size: var(--text4);
 		margin: 3.2rem;
-		width: 100%;
+		width: 85%;
 	}
 
 	.section-mobile{
@@ -406,7 +406,7 @@ body {
 	}
 
 	.info-txt{
-		width: 38%;
+		width: 30%;
 		line-height: var(--line-height2);
 	}
 
