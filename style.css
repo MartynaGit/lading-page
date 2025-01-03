@@ -79,7 +79,11 @@ body {
 	padding: var(--spacing-200) var(--spacing-500);
 	font-size: var(--text3);
 	font-weight: bold;
+	transition: all .4s;
 }
+
+
+
 
 .header {
 	padding: 4.8rem 8rem 0 8rem;
@@ -144,6 +148,12 @@ body {
 
 .btn-cyan {
 	background-color: var(--cyan-600);
+	transition: all .4s;
+
+}
+
+.btn-cyan:hover{
+	background-color: #71C0D4;
 }
 
 .btn span {
@@ -154,6 +164,11 @@ body {
 	margin-top: 1.6rem;
 	margin-bottom: 3.2rem;
 	background-color: var(--purple-600);
+	transition: all .4s;
+}
+
+.btn-purple:hover{
+	background-color: #B18BDD;
 }
 
 .info {
@@ -198,7 +213,7 @@ body {
 .info-title {
 	font-size: var(--text2);
 	text-align: center;
-	font-weight: 800;
+	font-weight: 900;
 	color: var(--slate-900);
 	line-height: var(--line-height);
 }
@@ -396,6 +411,8 @@ body {
 	.section-padding{
 		display: block;
 		padding: 0 var(--spacing-1000);
+		display: flex;
+	
 	}
 
 	
