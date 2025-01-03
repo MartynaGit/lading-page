@@ -58,8 +58,13 @@ body {
 	width: 100%;
 	font-family: 'Red Hat Display';
 }
-
+.wrapper{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
 .section-padding {
+	display: none;
 	padding: 0 var(--spacing-1000);
 }
 
@@ -158,6 +163,7 @@ body {
 	margin-top: 3.2rem;
 }
 
+
 .info-img-number {
 	width: 56px;
 }
@@ -219,7 +225,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	color: var(--white);
-	background-image: url('./images/mobile/image-footer.jpg');
+	background-image: url('./images/image-footer.jpg');
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -238,6 +244,7 @@ body {
 	text-align: center;
 	margin-bottom: 2.4rem;
 	margin-top: 6.4rem;
+	font-weight: 900;
 	z-index: 1;
 }
 
@@ -266,6 +273,7 @@ body {
 }
 
 @media (min-width: 768px) {
+	
 	.hero-text {
 		width: 55%;
 	}
@@ -298,6 +306,7 @@ body {
 
 	.info-title{
 		width: 60%;
+		font-weight: 900;
 	}
 	.info-txt{
 		width: 60%;
@@ -306,10 +315,24 @@ body {
 	.footer-text{
 		width: 60%;
 	}
+
+	.footer-container {
+		
+		
+		
+		
+		background-image: url('./images/image-footer-tb.jpg');
+		
+		
+
+		
+	}
+
 }
 
 
 @media(min-width:1440px){
+
 
 
 	
@@ -365,9 +388,21 @@ body {
 		margin: 3.2rem;
 		width: 100%;
 	}
+
+	.section-mobile{
+		display: none;
+	}
+
+	.section-padding{
+		display: block;
+		padding: 0 var(--spacing-1000);
+	}
+
+	
 	.info-title{
 		font-size: var(--text2);
 		width: 35%;
+		font-weight: 900;
 	}
 
 	.info-txt{
@@ -383,17 +418,23 @@ body {
 	.footer-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		padding: 6.4rem;
+		
+		padding:var(--spacing-1400)  6.4rem;
 		width: 100%;
-		background-image: url('./images/desktop/image-footer.jpg');
+		background-image: url('./images/image-footer-d.jpg');
+		background-size: cover;
+		
 
 		
 	}
 
 	
 	.btn-footer{
-		margin:0 auto;
+		margin: 0;
 		width: 50%;
+		align-self: start;
+		justify-self: end;
+		
 		
 		
 		
@@ -403,13 +444,19 @@ body {
 	.footer-heading{
 		text-align: left;
 		margin: 0;
+		align-self: start;
+		line-height: var(--line-height);
+		width: 90%;
 		
 	}
 
 	.footer-text{
 		margin: 0;
-		width: 70%;
+		width: 80%;
+		font-size: var(--text4);
 		text-align: left;
+		align-self: start;
+		justify-self: end;
 		
 		
 		
